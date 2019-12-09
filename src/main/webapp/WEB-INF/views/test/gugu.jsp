@@ -1,14 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-	<jsp:include page="../include/menu.jsp" />
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<jsp:include page="../include/menu.jsp" />
 	<h2>구구단 계산</h2>
 	<form action="/gugu_result.do" method="post">
 		단을 입력하세요
@@ -16,5 +7,4 @@
 		<input type="submit" value="확인">
 	</form>
 
-</body>
-</html>
+<jsp:include page="../include/footer.jsp" />
