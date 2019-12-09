@@ -12,9 +12,5 @@
 <h2>name : ${name}</h2>
 <h2>message : ${message}</h2>
 
-<h3>변경파일</h3>
-<h3>변경파일</h3>
-<h3>변경파일</h3>
-<h3>변경파일</h3>
 </body>
 </html>
