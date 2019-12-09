@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<jsp:include page="../include/menu.jsp" />
 	<h2>성적 계산 결과</h2>
 	이름 : ${dto.name}<br>
 	국어 : ${dto.kor}<br>

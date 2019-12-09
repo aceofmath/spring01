@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<jsp:include page="../include/menu.jsp" />
 	<h2>구구단 계산 결과</h2>
 	${result }
 

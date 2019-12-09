@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<jsp:include page="../include/menu.jsp" />
 	<h2>상품명 : ${map.product.name}</h2><br>
 	<h2>가격 : ${map.product.price}</h2>
 </body>

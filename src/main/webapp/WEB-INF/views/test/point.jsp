@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<jsp:include page="../include/menu.jsp" />
 	<h2>성적 계산</h2>
 	<form action="point_result.do" method="post">
 		이름 <input type="text" name="name"><br>

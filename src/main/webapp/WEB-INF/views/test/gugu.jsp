@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<jsp:include page="../include/menu.jsp" />
 	<h2>구구단 계산</h2>
 	<form action="/gugu_result.do" method="post">
 		단을 입력하세요
