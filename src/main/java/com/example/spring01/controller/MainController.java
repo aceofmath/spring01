@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.spring01.model.dto.PointDTO;
@@ -74,5 +75,18 @@ public class MainController {
 		map.put("product", new ProductDTO("샤프", 1000));
 				
 		return new ModelAndView("test/mav_result", "map", map);
+	}
+	
+	@RequestMapping("ajax.do")
+	public String ajax() {
+		
+		return "test/ajax";
+	}
+	
+	@RequestMapping("background.do")
+	public @ResponseBody ProductDTO background() {
+		ProductDTO dto = new ProductDTO("냉장고", 500000);
+		
+		return dto;
 	}
 }
