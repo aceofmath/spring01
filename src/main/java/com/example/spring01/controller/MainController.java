@@ -89,4 +89,45 @@ public class MainController {
 		
 		return dto;
 	}
+	
+	@RequestMapping("login.do")
+	public String login() {
+		
+		return "test/login";
+	}
+	
+	
+	@RequestMapping("login_result.do")
+	public String login_result(String id, String pw, Model model) {
+		
+		String result = "";
+		if(id.equals("kim") && pw.equals("1234") ) {
+			result = "환영합니다.";
+		}else {
+			result = "아이디 또는 비밀번호가 틀렸습니다.";
+		}
+		
+		model.addAttribute("result", result);
+		return "test/common_result";
+	}
+	
+	
+	@RequestMapping("ajax_gugu.do")
+	public String ajax_gugu() {
+		
+		return "test/ajax_gugu";
+	}
+	
+	
+	@RequestMapping("ajax_gugu_result.do")
+	public String ajax_gugu_result(@RequestParam(defaultValue = "3") int dan, Model model) {
+		
+		String result = "";
+		for(int i = 1; i <= 9; i++) {
+			result += dan + "x"+ i + "=" + dan * i + "<br>";
+		}
+		
+		model.addAttribute("result", result);
+		return "test/common_result";
+	}
 }

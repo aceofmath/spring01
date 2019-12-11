@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>${requestScope['javax.servlet.forward.request_uri']}</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 <a href="/">Home</a>
@@ -12,4 +13,6 @@
 <a href="move.do">redirect</a>
 <a href="mav.do">ModelAndView</a>
 <a href="ajax.do">비동기식 호출1</a>
+<a href="login.do">비동기식 호출2</a>
+<a href="ajax_gugu.do">비동기식 호출2</a>
 <hr>

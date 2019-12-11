@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="../include/menu.jsp" />
 
-<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 $(function(){
 	$.ajax({
@@ -16,7 +15,6 @@ $(function(){
         }  
 	});
 });
-
 </script>
 
 	<h2>비동기식 호출예제</h2>
