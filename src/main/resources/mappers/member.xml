@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="member">
  	<select id="list" resultType="com.example.spring01.model.dto.MemberDTO">
- 		select * from web.member order by name
+ 		select * from member order by name
  	</select>
  	
  	<select id="insert">
- 		insert into web.member (userid, passwd, name, email)
+ 		insert into member (userid, passwd, name, email)
 		values 
 		(#{userid}, #{passwd}, #{name}, #{email})
  	</select>

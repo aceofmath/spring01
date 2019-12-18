@@ -9,7 +9,8 @@
  
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost/web?serverTimezone=Asia/Seoul" />
+        <!-- property name="url" value="jdbc:mysql://localhost/web?serverTimezone=Asia/Seoul" /-->
+        <property name="url" value="jdbc:mysql://192.168.0.35:3306/aofmath?serverTimezone=Asia/Seoul" />
         <property name="username" value="aofmath" />
         <property name="password" value="1212" />
     </bean>

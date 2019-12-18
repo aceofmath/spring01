@@ -7,7 +7,6 @@
 <h2>회원등록폼</h2>
 
 <form name="form1" method="post" action="/member/insert.do">
-
 <table border="1" width="400px">
 	<tr>
 		<td>아이디</td>
