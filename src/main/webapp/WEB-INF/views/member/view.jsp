@@ -38,7 +38,7 @@ $(function(){
 		<td><input name="name" value="${dto.name}"></td>
 	</tr>
 	<tr>
-		<td>비밀번호</td>
+		<td>이메일</td>
 		<td><input name="email" value="${dto.email}"></td>
 	</tr>
 	<tr>
